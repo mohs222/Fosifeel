@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddLeadActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:id="@+id/llCustomerDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/add_lead"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/app_font"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/llCustomerDetails"
+        android:layout_above="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <EditText
+                android:id="@+id/etCustomerPhone"
+                android:inputType="phone"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="@string/customer_phone"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/app_font"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Spinner
+                    android:id="@+id/spLeadType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Spinner
+                    android:id="@+id/spProductType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/etCustomerName"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="@string/customer_name"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/app_font"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etCompanyName"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="@string/company_name"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/app_font"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etCustomerAddress"
+                android:inputType="text|textMultiLine"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="@string/customer_address"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/app_font"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="@string/email"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/app_font"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etDOB"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="@string/dob"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/app_font"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etPan"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="@string/pan"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/app_font"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Spinner
+                    android:id="@+id/spIncomeType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etIncome"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="@string/income"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/app_font"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etExistingCC"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="@string/existing_cc"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/app_font"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etLimit"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="@string/limit"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/app_font"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etRemark"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="@string/remark"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/app_font"
+                android:background="@drawable/grid_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:drawableLeft="@drawable/ic_baseline_close_24_white"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:id="@+id/btnCancel"
+            android:textColor="#FFF"
+            android:text="@string/cancel"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/app_font"
+            android:background="@drawable/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:drawableEnd="@drawable/save_white_24"
+            android:layout_weight="1"
+            android:id="@+id/btnSave"
+            android:textColor="#FFF"
+            android:text="@string/save"
+            android:clickable="false"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/app_font"
+            android:background="@drawable/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

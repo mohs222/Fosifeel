@@ -1,0 +1,4 @@
+key_file 			= 	fosifeel_key.jks
+Key Store Password	=	Admin.1333
+Alias 				= 	fosifeel_key
+Password			=   Admin.1333
